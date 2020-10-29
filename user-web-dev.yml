@@ -38,7 +38,7 @@ spring:
       trace:
         enabled: true
   zipkin:
-    base-url: http://127.0.0.1:9411
+    base-url: http://127.0.0.1
     sender:
       type: rabbit
   sleuth:
