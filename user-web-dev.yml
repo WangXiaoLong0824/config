@@ -37,7 +37,13 @@ spring:
       enabled: true
       trace:
         enabled: true
-  
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    sender:
+      type: rabbit
+  sleuth:
+    sampler:
+      probability: 1
         
 management:
   endpoints:
