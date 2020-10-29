@@ -21,11 +21,11 @@ spring:
         max-idle: 10
         min-idle: 0
   rabbitmq:
-    host: 127.0.0.1
+    host: localhost
     port: 5672
     username: guest
     password: guest
-    publisher-confirm-type: correlated
+    publisher-confirms: true
     publisher-returns: true
     listener:
       simple:
