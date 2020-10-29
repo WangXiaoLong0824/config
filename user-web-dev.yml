@@ -1,11 +1,11 @@
 spring:
   devtools:
     restart:
-      enabled: true  #设置开启热部署
-      additional-paths: src/main/java #重启目录
+      enabled: true 
+      additional-paths: src/main/java 
       exclude: WEB-INF/**
   freemarker:
-    cache: false    #页面不加载缓存，修改即时生效
+    cache: false    
   thymeleaf:
     cache: false
     mode: LEGACYHTML5
@@ -25,6 +25,13 @@ spring:
     port: 5672
     username: guest
     password: guest
+    publisher-confirms: true
+    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+      direct:
+        acknowledge-mode: manual
   cloud:
     bus:
       enabled: true
