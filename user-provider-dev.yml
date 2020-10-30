@@ -10,7 +10,7 @@ spring:
     username: pbl
     password: pbl
     type: com.alibaba.druid.pool.DruidDataSource
- zipkin:
+  zipkin:
     base-url: http://127.0.0.1
     sender:
       type: rabbit
