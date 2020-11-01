@@ -6,7 +6,7 @@ spring:
       database: 2004
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.2.23:3306/pbl?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
+    url: jdbc:mysql://192.168.2.23:3306/oldpeople?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
     username: pbl
     password: pbl
     type: com.alibaba.druid.pool.DruidDataSource
